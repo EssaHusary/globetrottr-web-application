@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+body {
+  /* this font is temporary! gotta decide on it later! */
+  font-family: "Montserrat", sans-serif !important;
+}
+
+@keyframes animate-nav-in {
+  from {
+    opacity: 0%;
+    top: -10px;
+  }
+  to {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0px 5px;
+  border-bottom: 1px solid #888;
+  /* animation properties */
+  transition: all 0.2s ease-in-out;
+}
+
+header nav h1 {
+  margin-right: auto;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  margin: auto 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav a.active {
+  background: #333;
+  color: #fff;
+}
+
+.root > footer {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #333;
+  justify-content: center;
+}
+
+/* separate these later? */
+
+.about,
+.proto,
+header nav {
+  position: relative;
+  padding: 8px;
+  justify-content: center;
+  animation: animate-nav-in 0.2s forwards ease-in-out;
+}
+
+/* for the vert. proto */
+.proto-view {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 70%;
+}
+
+.proto-search {
+  max-width: 70%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.proto-search input {
+  border-radius: 4px;
+  border: #333 solid 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 4px;
+}
+
+.proto-search label {
+  display: block;
+}
+
+.proto-search button {
+  margin-left: 4px;
+  border-radius: 4px;
+  border: #333 solid 2px;
+  color: #fff;
+  background: #333;
+  padding: 4px 16px;
+}
+
+/* for the real thing! */
+
+.canvas {
+  margin: 0px auto;
+  min-height: 100vh;
+}
+
+.canvas footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #333;
+}
+
+.login,
+.signup,
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+/* for the layout with toolbar*/
+
+.withToolbar {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas: "title" "mainContainer" "toolbar";
+  grid-template-rows: 1fr 10fr 1fr;
+  row-gap: 8px;
+}
+
+.withToolbar > .title {
+  display: flex;
+  align-items: bottom;
+  grid-area: "title";
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-left: 16px;
+  z-index: 1;
+}
+
+.withToolbar .userNameIDCombo {
+  display: grid;
+  justify-items: right;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: auto;
+}
+
+.withToolbar > .mainContainer {
+  padding: 0px 16px;
+  padding-bottom: 75px;
+}
+
+.withToolbar .toolbarIconCombo {
+  display: grid;
+  justify-items: center;
+}
+
+.toolbarIconCombo label {
+  font-size: 9pt;
+  font-weight: 200;
+}
+
+.withToolbar .icon {
+  margin-bottom: 1px;
+}
+
+.withToolbar Nav {
+  padding: 1px 8px !important;
+}
+
+.placeholderPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #888;
+  height: 1000px;
+}
+
+/* for the schedule view */
+
+.scheduleViewOffcanvas {
+  display: grid !important;
+  height: 100vh;
+  grid-template-areas: "title" "mainContainer";
+  grid-template-rows: 1fr 10fr;
+  row-gap: 8px;
+}
+
+.scheduleViewOffcanvas .scheduleViewTitle {
+  display: flex;
+  align-items: bottom;
+  margin-top: 60px;
+  padding: 0px 16px;
+  width: 100%;
+}
+
+.scheduleViewOffcanvas .scheduleViewTitle h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  line-height: 1.55 !important;
+  padding-left: 8px;
+}
+
+.scheduleViewTitle .saveButton {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.scheduleDetailedView {
+  display: grid;
+  grid-template-areas: "title" "mainContainer";
+  row-gap: 8px;
+}
+
+/* general principle for cards */
+.generalCard {
+  padding: 8px;
+  margin: 20px 0px;
+}
+
+/*event preview card */
+.eventPreview,
+.eventPreview > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 8px;
+  margin-bottom: 16px;
+}
+
+.eventPreview .location {
+  margin-left: 16px;
+}
+
+.eventPreview .startTime {
+  margin-left: auto;
+  margin-right: 0px;
+  color: #555;
+}
+
+.eventPreview .startTime {
+  display: grid;
+  justify-items: right;
+  font-size: 10pt;
+}
+
+.eventViewOffcanvas .eventDetail {
+  display: grid;
+  row-gap: 8px;
+}

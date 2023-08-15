@@ -1,0 +1,33 @@
+name: Jest
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: testenv
+    defaults:
+      run:
+        working-directory: ./application/backend/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18"
+      
+      # Install required deps for action, run mongodb
+      - name: Run in background
+        run: |
+          sudo docker run -d -p 27017:27017 mongo:latest
+          npm install
+          npm install -g jest
+
+      # Finally, run our tests
+      - name: Run the tests
+        run: npm test
+        env:
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+          DB_URL: ${{ secrets.DB_URL }}
+          OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
+          OPENTRIPMAP_API_KEY: ${{ secrets.OPENTRIPMAP_API_KEY }}
+          BINGMAP_API_KEY: ${{ secrets.BINGMAP_API_KEY }}
+          DISCOVERY_API_KEY: ${{ secrets.DISCOVERY_API_KEY }}

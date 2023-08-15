@@ -1,0 +1,119 @@
+{
+  "schedules": [
+    {
+      "destination": "San Francisco",
+      "scheduleId": 1,
+      "totalCost": 4200.68,
+      "averageMidpointRating": 4.8,
+      "numberOfMidpoints": 4,
+      "overallRating": 4.7,
+      "totalTravelTime": 86400,
+      "eventsAndRoutes": [
+        {
+          "eventId": "123",
+          "midpoint": {
+            "type": "hotel",
+            "location": "Hotel VIA",
+            "rating": 4.9,
+            "hashtags": ["#relaxing"],
+            "contactInformation": 4150000000,
+            "quickKnowledge": ["Coin laundry available", "Breakfast available"]
+          },
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        },
+        {
+          "routeId": "333",
+          "travelMean": "Car",
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        },
+        {
+          "eventId": "123",
+          "midpoint": {
+            "type": "hotel",
+            "location": "Hotel VIA",
+            "rating": 4.9,
+            "hashtags": ["#relaxing"],
+            "contactInformation": 4150000000,
+            "quickKnowledge": ["Coin laundry available", "Breakfast available"]
+          },
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        }
+      ],
+      "party": ["devino12", "kevina9", "justine7"],
+      "partySize": 8,
+      "userRating": 4.2,
+      "sharedWith": [
+        {
+          "userId": "devino12",
+          "permission": ""
+        },
+        {
+          "userId": "kevina9",
+          "permission": ""
+        }
+      ]
+    },
+    {
+      "destination": "Santa Clara",
+      "scheduleId": 2,
+      "totalCost": 3700.68,
+      "averageMidpointRating": 4.8,
+      "numberOfMidpoints": 4,
+      "overallRating": 4.7,
+      "totalTravelTime": 86400,
+      "eventsAndRoutes": [
+        {
+          "eventId": "123",
+          "midpoint": {
+            "type": "hotel",
+            "location": "Hotel AAAA",
+            "rating": 3.4,
+            "hashtags": ["#relaxing", "#AAAA"],
+            "contactInformation": 4150000001,
+            "quickKnowledge": [
+              "Coin laundry unavailable",
+              "Breakfast probably available"
+            ]
+          },
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        },
+        {
+          "routeId": "333",
+          "travelMean": "Train",
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        },
+        {
+          "eventId": "123",
+          "midpoint": {
+            "type": "hotel",
+            "location": "Hotel VIA",
+            "rating": 4.9,
+            "hashtags": ["#relaxing"],
+            "contactInformation": 4150000000,
+            "quickKnowledge": ["Coin laundry available", "Breakfast available"]
+          },
+          "startDate": 1678455617,
+          "endDate": 1678455617
+        }
+      ],
+      "party": ["devino12", "kevina9", "justine7"],
+      "partySize": 8,
+      "userRating": 4.2,
+      "sharedWith": [
+        {
+          "userId": "devino12",
+          "permission": ""
+        },
+        {
+          "userId": "kevina9",
+          "permission": ""
+        }
+      ]
+    }
+  ]
+}

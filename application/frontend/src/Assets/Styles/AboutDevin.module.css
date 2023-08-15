@@ -1,0 +1,38 @@
+.aboutDevinSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50em;
+  padding: 2em;
+  margin: 0%;
+}
+
+.aboutDevinCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+  padding: 1em;
+  border-radius: 1.25em;
+  background: #aaaa;
+}
+
+.aboutDevinCard img {
+  height: 95%;
+  padding: 0em;
+  margin-right: 1em;
+  border-radius: 1.25em;
+}
+
+.aboutDevinCardLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+}
+
+.heading {
+  font-size: 2em;
+}
