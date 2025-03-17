@@ -15,7 +15,6 @@ Here is an example of what users can expect to see when creating a new schedule:
 
 Here is an example of what users can expect to see when checking out their schedules:
 ![image](https://github.com/user-attachments/assets/98378017-7a21-45c4-b793-c023a71f6a0a)
-![image](https://github.com/user-attachments/assets/1c6966bc-e7df-4b24-a3ea-109bcd852a2d)
 
 
 
